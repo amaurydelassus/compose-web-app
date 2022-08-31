@@ -1,6 +1,7 @@
 package com.sample.content
 
 import androidx.compose.runtime.Composable
+import com.sample.components.SocialIconLink
 import org.jetbrains.compose.web.attributes.ATarget
 import org.jetbrains.compose.web.attributes.target
 import org.jetbrains.compose.web.css.*
@@ -18,8 +19,14 @@ fun Header() {
                 classes(WtRows.wtRow, WtRows.wtRowSizeM)
             }) {
                 Logo()
-                // TODO: support i18n
-                //LanguageButton()
+                Div({
+                    classes(WtCols.wtColInline)
+                    style {
+                        alignSelf(AlignSelf.Center)
+                    }
+                }) {
+                    getSocialLinks().forEach { SocialIconLink(it) }
+                }
             }
         }
     }
@@ -57,3 +64,4 @@ private fun LanguageButton() {
         }
     }
 }
+

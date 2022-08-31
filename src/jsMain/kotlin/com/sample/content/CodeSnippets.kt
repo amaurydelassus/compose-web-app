@@ -209,7 +209,7 @@ fun CodeSamples() {
                 H1({
                     classes(WtTexts.wtH2)
                 }) {
-                    Text("Code samples")
+                    Text("Math Algo")
                 }
             }
 

@@ -22,7 +22,7 @@ fun Intro() {
                     alignSelf(AlignSelf.Start)
                 }
             }) {
-                Img(src = "i1.svg", attrs = { classes(AppStylesheet.composeLogo) })
+                Img(src = "profile.jpeg", attrs = { classes(AppStylesheet.composeLogo) })
             }
 
             Div({
@@ -34,7 +34,7 @@ fun Intro() {
                 )
             }) {
                 H1(attrs = { classes(WtTexts.wtHero) }) {
-                    Text("Compose for ")
+                    Text("Amaury ")
                     Span({
                         classes(WtTexts.wtHero)
                         style {
@@ -42,11 +42,7 @@ fun Intro() {
                             whiteSpace("nowrap")
                         }
                     }) {
-                        Text("Web")
-
-//                        Span(attrs = { classes(AppStylesheet.composeTitleTag) }) {
-//                            Text("Technology preview")
-//                        }
+                        Text("DELASSUS")
                     }
                 }
                 Div({
@@ -76,38 +72,29 @@ private fun IntroAboutComposeWeb() {
             classes(WtCols.wtCol9, WtCols.wtColMd9, WtCols.wtColSm12)
         }) {
             P({ classes(WtTexts.wtSubtitle2, WtOffsets.wtTopOffset24) }) {
-                Text("Reactive web UIs for Kotlin, based on Google's ")
+                Text("Actuellement apprentie développeur mobile (android) chez ")
 
-                A(href = "https://developer.android.com/jetpack/compose", attrs = {
+                A(href = "https://fr.worldline.com/fr/home.html", attrs = {
                     classes(WtTexts.wtLink)
                     target(ATarget.Blank)
                 }) {
-                    Text("modern toolkit")
+                    Text("Worldline")
                 }
 
-                Text(" and brought to you by JetBrains")
+                Text(", j'ai la chance de travailler sur de nombreuses techno telle que kotlin, firebase, gitlabs, jetpack compose ... ")
             }
 
             P({
                 classes(WtTexts.wtText1, WtOffsets.wtTopOffset24)
             }) {
-            Text(
-                "Compose for Web simplifies and accelerates UI development for web applications, " +
-                        "and aims to enable UI code sharing between web, desktop, and Android applications " +
-                        "in the future."
-            )
+            Text("Passionné par l'informatique et les nouvelles technologies, je passe une bonne partie de mon temps libre pour apprendre et tester de nouvelles choses. Je vous explique certaine d'entre elle sur ce site ou mon repo github.\n")
         }
-
-            //ComposeWebStatusMessage()
-
-            IntroCodeSample()
-
             A(
                 attrs = {
                     classes(WtTexts.wtButton, WtOffsets.wtTopOffset24)
                     target(ATarget.Blank)
                 },
-                href = "https://github.com/jetbrains/compose-jb"
+                href = "https://github.com/amaurydelassus"
             ) {
                 Text("Explore on GitHub")
             }
@@ -183,39 +170,6 @@ private fun IntroCodeSampleResult() {
             var greeting by remember { mutableStateOf(greet()) }
             Button(attrs = { onClick { greeting = greet() } }) {
                 Text(greeting)
-            }
-        }
-    }
-}
-
-@Composable
-private fun ComposeWebStatusMessage() {
-    Div({
-        classes(WtRows.wtRow, WtRows.wtRowSizeXs, WtOffsets.wtTopOffset24)
-    }) {
-        Div({
-            classes(WtCols.wtColInline)
-        }) {
-            Img(src = "ic_info.svg", attrs = {
-                style {
-                    width(24.px)
-                    height(24.px)
-                }
-            })
-        }
-
-        Div({
-            classes(WtCols.wtColAutoFill)
-        }) {
-            P({
-                classes(WtTexts.wtText3)
-            }) {
-                Text(
-                    "With its current status Technology Preview, Compose for Web " +
-                            "is not production-ready, and should only be used in experiments. " +
-                            "We are hard at work to bring you great learning materials, tutorials, " +
-                            "and documentation, and optimize the performance of Compose for Web in the future!"
-                )
             }
         }
     }

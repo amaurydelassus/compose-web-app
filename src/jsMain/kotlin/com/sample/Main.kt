@@ -11,13 +11,11 @@ fun main() {
         Style(AppStylesheet)
 
         Layout {
-            Header()
             MainContentLayout {
                 Intro()
                 ComposeWebLibraries()
                 GetStarted()
                 CodeSamples()
-                JoinUs()
             }
             PageFooter()
         }
