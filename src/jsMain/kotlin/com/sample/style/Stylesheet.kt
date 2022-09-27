@@ -25,8 +25,8 @@ object AppCSSVariables {
 
 
 object AppStylesheet : StyleSheet() {
-    val composeLogo by style {
-        maxWidth(100.percent)
+    val PhotoDeProfil by style {
+        maxWidth(25.percent)
     }
 
     val composeTitleTag by style {

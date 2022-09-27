@@ -24,4 +24,14 @@ object WtSections : StyleSheet(AppStylesheet) {
         backgroundColor(Color("#323236"))
         backgroundColor(AppCSSVariables.wtColorGreyDark.value())
     }
+
+    val Home by style {
+        backgroundColor(Color("#323236"))
+        backgroundColor(AppCSSVariables.wtColorGreyDark.value())
+        backgroundImage("background.jpg")
+        minHeight(100.percent)
+        minHeight(100.percent)
+        maxWidth(100.percent)
+        maxWidth(100.percent)
+    }
 }

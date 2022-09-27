@@ -9,7 +9,6 @@ import com.sample.style.AppStylesheet
 fun main() {
     renderComposable(rootElementId = "root") {
         Style(AppStylesheet)
-
         Layout {
             MainContentLayout {
                 Intro()
