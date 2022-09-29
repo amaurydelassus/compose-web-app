@@ -12,7 +12,7 @@ import com.sample.style.*
 fun Intro() {
     ContainerInSection(WtSections.Home)  {
         Div({
-            classes(WtRows.wtRow, WtRows.wtRowSizeM, WtRows.wtRowSmAlignItemsCenter)
+            classes(WtRows.wtRow, WtRows.wtRowSizeM, WtRows.wtRowSmAlignItemsCenter,WtSections.Home)
             style {
                 justifyContent(JustifyContent.Center)
                 flexWrap(FlexWrap.Wrap)
@@ -45,10 +45,13 @@ private fun IntroAboutComposeWeb() {
             flexWrap(FlexWrap.Wrap)
         }
     }) {
-        H1(attrs = { classes(WtTexts.wtHero) }) {
+        H1(attrs = {
+            classes(
+                WtTexts.wtHero, WtTexts.wtH2ThemeDark
+            )
+        }) {
             Text("Amaury ")
             Span({
-                classes(WtTexts.wtHero)
                 style {
                     display(DisplayStyle.InlineBlock)
                     whiteSpace("nowrap")
@@ -58,7 +61,7 @@ private fun IntroAboutComposeWeb() {
             }
         }
 
-        P({ classes(WtTexts.wtSubtitle2, WtOffsets.wtTopOffset24) }) {
+        P({ classes(WtTexts.wtSubtitle2, WtOffsets.wtTopOffset24,WtTexts.wtH2ThemeDark) }) {
             Text("Développeur mobile (android) chez ")
 
            A(href = "https://fr.worldline.com/fr/home.html", attrs = {

@@ -30,8 +30,6 @@ object WtSections : StyleSheet(AppStylesheet) {
         backgroundColor(AppCSSVariables.wtColorGreyDark.value())
         backgroundImage("background.jpg")
         minHeight(100.percent)
-        minHeight(100.percent)
-        maxWidth(100.percent)
-        maxWidth(100.percent)
+        maxHeight(100.percent)
     }
 }

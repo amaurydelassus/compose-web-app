@@ -9,9 +9,9 @@ import com.sample.style.AppStylesheet
 fun main() {
     renderComposable(rootElementId = "root") {
         Style(AppStylesheet)
+        Intro()
         Layout {
             MainContentLayout {
-                Intro()
                 ComposeWebLibraries()
                 GetStarted()
                 CodeSamples()
